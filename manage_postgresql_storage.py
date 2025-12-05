@@ -39,22 +39,13 @@ def stop_postgres():
     """Stop and remove container"""
     print("Stopping and removing PostgreSQL container...")
     run_command("docker-compose down")
-<<<<<<< HEAD
-    print("Container removed (but volume persists)!")
-=======
     print("The PostgreSQL container has been removed, but the volume persists)!")
->>>>>>> bf5f4c8 ([file_modification] source code updation)
     print()
 
 
 def create_data():
-<<<<<<< HEAD
-    """Create sample data in database"""
-    print("Creating sample data in database...")
-=======
     """Create synthetic data in database"""
     print("Creating synthetic data in database...")
->>>>>>> bf5f4c8 ([file_modification] source code updation)
     
     # Create table
     create_table_sql = """
