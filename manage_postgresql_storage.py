@@ -119,7 +119,7 @@ Commands:
         create_data()
     elif args.command == 'view-data':
         view_data()
-    elif args.command == 'volume-info':
+    elif args.command == 'view-volume-info':
         show_volume()
 
 

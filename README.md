@@ -59,7 +59,7 @@ The workflow is as follows:
 | `stop` | Stop and remove container (volume persists) |
 | `create-data` | Create sample table and insert data |
 | `view-data` | Display current data in database |
-| `volume-info` | Show Docker volume details |
+| `view-volume-info` | Show Docker volume details |
 
 ## Configuration
 
