@@ -80,10 +80,6 @@ The PostgreSQL configuration is defined in `docker-compose.yml`:
 ├── manage_postgresql_storage.py             # Python management script
 ├── .env.example          # Environment variables template
 └── README.md             # README file description
-```
-
-## 🔍 Understanding Docker Volumes
-=======
 ├── docker-compose.yml                       # Docker Compose configuration
 ├── manage_postgresql_storage.py             # Database management script
 ├── .env.example                             # Environment variables template (i.e. PostgreSQL database access)
@@ -91,7 +87,6 @@ The PostgreSQL configuration is defined in `docker-compose.yml`:
 ```
 
 ## Understanding Docker Volumes
->>>>>>> bf5f4c8 ([file_modification] source code updation)
 
 ### What happens when you run the commands:
 
@@ -139,11 +134,7 @@ python3 manage_postgresql_storage.py stop
 docker volume rm postgres_volume
 ```
 
-<<<<<<< HEAD
-## Key Learnings
-=======
 ## Key points
->>>>>>> bf5f4c8 ([file_modification] source code updation)
 
 - Docker volumes persist independently of container lifecycle
 - Named volumes can be shared between container recreations
