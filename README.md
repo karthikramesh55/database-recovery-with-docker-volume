@@ -1,6 +1,8 @@
 # Database Recovery with Docker Volume
 
-A kata demonstrating how Docker volumes persist data even when containers are stopped and removed. This kata uses a PostgreSQL database to show that data stored in a Docker volume remains accessible after creating new containers.
+A kata demonstrating how Docker volumes persist data even when containers are stopped and removed.
+This kata uses a PostgreSQL alpine database instance as a container to investigate as to whether data stored in a Docker volume remains accessible after removing the container that was attached to the volume, and creating a new container.
+The docker-compose YAML configures the PostgreSQL alpine database service container instantiation + exposure of source port onto the target port + volume attachment 
 
 ## Quick Start
 
