@@ -43,14 +43,6 @@ python3 manage_postgresql_storage.py view-data
 
 The data persists because it's stored in the Docker volume, not in the container!
 
-## Run Full Demo
-
-To see the complete demonstration in action:
-
-```bash
-python3 manage_postgresql_storage.py demo
-```
-
 The workflow is as follows:
 1. Starting the PostgreSQL container
 2. Creating synthetic data
@@ -83,6 +75,7 @@ The PostgreSQL configuration is defined in `docker-compose.yml`:
 
 ```
 .
+<<<<<<< HEAD
 ├── docker-compose.yml    # Docker Compose configuration
 ├── manage_postgresql_storage.py             # Python management script
 ├── .env.example          # Environment variables template
@@ -90,6 +83,15 @@ The PostgreSQL configuration is defined in `docker-compose.yml`:
 ```
 
 ## 🔍 Understanding Docker Volumes
+=======
+├── docker-compose.yml                       # Docker Compose configuration
+├── manage_postgresql_storage.py             # Database management script
+├── .env.example                             # Environment variables template (i.e. PostgreSQL database access)
+└── README.md                                # README markdown content description
+```
+
+## Understanding Docker Volumes
+>>>>>>> bf5f4c8 ([file_modification] source code updation)
 
 ### What happens when you run the commands:
 
@@ -137,7 +139,11 @@ python3 manage_postgresql_storage.py stop
 docker volume rm postgres_volume
 ```
 
+<<<<<<< HEAD
 ## Key Learnings
+=======
+## Key points
+>>>>>>> bf5f4c8 ([file_modification] source code updation)
 
 - Docker volumes persist independently of container lifecycle
 - Named volumes can be shared between container recreations

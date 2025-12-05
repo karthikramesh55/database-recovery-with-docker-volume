@@ -39,13 +39,22 @@ def stop_postgres():
     """Stop and remove container"""
     print("Stopping and removing PostgreSQL container...")
     run_command("docker-compose down")
+<<<<<<< HEAD
     print("Container removed (but volume persists)!")
+=======
+    print("The PostgreSQL container has been removed, but the volume persists)!")
+>>>>>>> bf5f4c8 ([file_modification] source code updation)
     print()
 
 
 def create_data():
+<<<<<<< HEAD
     """Create sample data in database"""
     print("Creating sample data in database...")
+=======
+    """Create synthetic data in database"""
+    print("Creating synthetic data in database...")
+>>>>>>> bf5f4c8 ([file_modification] source code updation)
     
     # Create table
     create_table_sql = """
@@ -61,13 +70,13 @@ def create_data():
     # Insert data
     insert_data_sql = """
         INSERT INTO users (name, email) VALUES 
-        ('Alice Johnson', 'alice@example.com'),
-        ('Bob Smith', 'bob@example.com'),
-        ('Charlie Brown', 'charlie@example.com');
+        ('Akio Morita', 'akio@invo.com'),
+        ('Masaru Ibuka', 'masaru@invo.com'),
+        ('Hayato Ikeda', 'hayato@invo.com');
     """
     run_command(f'docker exec -i postgres-persistent psql -U dbuser -d testdb -c "{insert_data_sql}"')
     
-    print("Sample data created!")
+    print("Synthetic data created!")
     print()
 
 
