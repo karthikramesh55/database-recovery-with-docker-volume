@@ -77,11 +77,6 @@ The PostgreSQL configuration is defined in `docker-compose.yml`:
 
 ```
 .
-<<<<<<< HEAD
-├── docker-compose.yml    # Docker Compose configuration
-├── manage_postgresql_storage.py             # Python management script
-├── .env.example          # Environment variables template
-└── README.md             # README file description
 ├── docker-compose.yml                       # Docker Compose configuration
 ├── manage_postgresql_storage.py             # Database management script
 ├── .env.example                             # Environment variables template (i.e. PostgreSQL database access)
